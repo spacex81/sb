@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="" />
+    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +20,9 @@
     </option>
   </component>
   <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
     <option name="useGoPathFromSystemEnvironment" value="false" />
@@ -42,6 +47,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "/Users/sinsinhyeonseon/WebServer/GoServer/practice/db/query",
@@ -65,7 +71,7 @@
       <recent name="$PROJECT_DIR$/db/sqlc" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestTransferTx in github.com/spacex81/simplebank/db/sqlc">
+  <component name="RunManager" selected="Go Test.go test github.com/spacex81/simplebank/db/sqlc">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="practice" />
       <working_directory value="$PROJECT_DIR$" />
@@ -122,8 +128,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestTransferTx in github.com/spacex81/simplebank/db/sqlc" />
         <item itemvalue="Go Test.go test github.com/spacex81/simplebank/db/sqlc" />
+        <item itemvalue="Go Test.TestTransferTx in github.com/spacex81/simplebank/db/sqlc" />
         <item itemvalue="Go Test.TestGetAccount in github.com/spacex81/simplebank/db/sqlc" />
         <item itemvalue="Go Test.TestCreateAccount in account_test.go" />
         <item itemvalue="Go Build.go build main.go" />
