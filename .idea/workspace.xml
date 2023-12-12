@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b64b7b9c-4121-4be4-ab4f-be09f46cbae3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b64b7b9c-4121-4be4-ab4f-be09f46cbae3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b64b7b9c-4121-4be4-ab4f-be09f46cbae3/storage_v2/_src_/database/simple_bank.qcxlqw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b64b7b9c-4121-4be4-ab4f-be09f46cbae3/storage_v2/_src_/database/simple_bank.qcxlqw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/query/user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/sqlc/user_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/account.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/account.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mock/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/mock/store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sqlc/account_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/sqlc/account_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sqlc/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/sqlc/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sqlc/querier.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/sqlc/querier.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/random.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/random.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,18 +82,8 @@
       <recent name="$PROJECT_DIR$/db/sqlc" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestGetAccountAPI in github.com/spacex81/simplebank/api">
-    <configuration name="TestCreateAccount in account_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="practice" />
-      <working_directory value="$PROJECT_DIR$/db/sqlc" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/db/sqlc/account_test.go" />
-      <framework value="gotest" />
-      <pattern value="^\QTestCreateAccount\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestGetAccount in github.com/spacex81/simplebank/db/sqlc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.go test github.com/spacex81/simplebank/api">
+    <configuration name="TestCreateUser in github.com/spacex81/simplebank/db/sqlc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="practice" />
       <working_directory value="$PROJECT_DIR$/db/sqlc" />
       <root_directory value="$PROJECT_DIR$" />
@@ -97,7 +92,7 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestGetAccount\E$" />
+      <pattern value="^\QTestCreateUser\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestGetAccountAPI in github.com/spacex81/simplebank/api" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -112,7 +107,7 @@
       <pattern value="^\QTestGetAccountAPI\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestTransferTx in github.com/spacex81/simplebank/db/sqlc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetUser in github.com/spacex81/simplebank/db/sqlc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="practice" />
       <working_directory value="$PROJECT_DIR$/db/sqlc" />
       <root_directory value="$PROJECT_DIR$" />
@@ -121,7 +116,18 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestTransferTx\E$" />
+      <pattern value="^\QTestGetUser\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test github.com/spacex81/simplebank/api" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="practice" />
+      <working_directory value="$PROJECT_DIR$/api" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/spacex81/simplebank/api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <configuration name="go test github.com/spacex81/simplebank/db/sqlc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -137,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestGetAccountAPI in github.com/spacex81/simplebank/api" />
+        <item itemvalue="Go Test.go test github.com/spacex81/simplebank/api" />
         <item itemvalue="Go Test.go test github.com/spacex81/simplebank/db/sqlc" />
-        <item itemvalue="Go Test.TestTransferTx in github.com/spacex81/simplebank/db/sqlc" />
-        <item itemvalue="Go Test.TestGetAccount in github.com/spacex81/simplebank/db/sqlc" />
-        <item itemvalue="Go Test.TestCreateAccount in account_test.go" />
+        <item itemvalue="Go Test.TestGetUser in github.com/spacex81/simplebank/db/sqlc" />
+        <item itemvalue="Go Test.TestCreateUser in github.com/spacex81/simplebank/db/sqlc" />
+        <item itemvalue="Go Test.TestGetAccountAPI in github.com/spacex81/simplebank/api" />
       </list>
     </recent_temporary>
   </component>
