@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="lecture 16 - handle db error">
-      <change afterPath="$PROJECT_DIR$/api/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/password.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/password_test.go" afterDir="false" />
+    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="lecture 17 - hash password">
+      <change afterPath="$PROJECT_DIR$/token/jwt_maker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/token/jwt_maker_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/token/maker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/token/paseto_maker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/token/paseto_maker_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/token/payload.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sqlc/user_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/sqlc/user_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,105 +49,108 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sinsinhyeonseon/WebServer/GoServer/practice/db/query&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/sinsinhyeonseon/WebServer/GoServer/practice/api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;PostgreSQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "PostgreSQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/db/query" />
       <recent name="$PROJECT_DIR$/db/sqlc" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestPassword in github.com/spacex81/simplebank/util">
-    <configuration name="TestCreateUser in github.com/spacex81/simplebank/db/sqlc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestExpiredPasetoToken in github.com/spacex81/simplebank/token">
+    <configuration name="TestExpiredJWTToken in github.com/spacex81/simplebank/token" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="practice" />
-      <working_directory value="$PROJECT_DIR$/db/sqlc" />
+      <working_directory value="$PROJECT_DIR$/token" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/spacex81/simplebank/db/sqlc" />
+      <package value="github.com/spacex81/simplebank/token" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestCreateUser\E$" />
+      <pattern value="^\QTestExpiredJWTToken\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetUser in github.com/spacex81/simplebank/db/sqlc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestExpiredPasetoToken in github.com/spacex81/simplebank/token" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="practice" />
-      <working_directory value="$PROJECT_DIR$/db/sqlc" />
+      <working_directory value="$PROJECT_DIR$/token" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/spacex81/simplebank/db/sqlc" />
+      <package value="github.com/spacex81/simplebank/token" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestGetUser\E$" />
+      <pattern value="^\QTestExpiredPasetoToken\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestPassword in github.com/spacex81/simplebank/util" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestInvalidJWTTokenAlgNone in github.com/spacex81/simplebank/token" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="practice" />
-      <working_directory value="$PROJECT_DIR$/util" />
+      <working_directory value="$PROJECT_DIR$/token" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/spacex81/simplebank/util" />
+      <package value="github.com/spacex81/simplebank/token" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestPassword\E$" />
+      <pattern value="^\QTestInvalidJWTTokenAlgNone\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test github.com/spacex81/simplebank/api" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestJWTMaker in github.com/spacex81/simplebank/token" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="practice" />
-      <working_directory value="$PROJECT_DIR$/api" />
+      <working_directory value="$PROJECT_DIR$/token" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/spacex81/simplebank/api" />
+      <package value="github.com/spacex81/simplebank/token" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+      <pattern value="^\QTestJWTMaker\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test github.com/spacex81/simplebank/db/sqlc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPasetoMaker in github.com/spacex81/simplebank/token" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="practice" />
-      <working_directory value="$PROJECT_DIR$/db/sqlc" />
+      <working_directory value="$PROJECT_DIR$/token" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/spacex81/simplebank/db/sqlc" />
+      <package value="github.com/spacex81/simplebank/token" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+      <pattern value="^\QTestPasetoMaker\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestPassword in github.com/spacex81/simplebank/util" />
-        <item itemvalue="Go Test.TestCreateUser in github.com/spacex81/simplebank/db/sqlc" />
-        <item itemvalue="Go Test.go test github.com/spacex81/simplebank/api" />
-        <item itemvalue="Go Test.go test github.com/spacex81/simplebank/db/sqlc" />
-        <item itemvalue="Go Test.TestGetUser in github.com/spacex81/simplebank/db/sqlc" />
+        <item itemvalue="Go Test.TestExpiredPasetoToken in github.com/spacex81/simplebank/token" />
+        <item itemvalue="Go Test.TestPasetoMaker in github.com/spacex81/simplebank/token" />
+        <item itemvalue="Go Test.TestInvalidJWTTokenAlgNone in github.com/spacex81/simplebank/token" />
+        <item itemvalue="Go Test.TestExpiredJWTToken in github.com/spacex81/simplebank/token" />
+        <item itemvalue="Go Test.TestJWTMaker in github.com/spacex81/simplebank/token" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +188,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lecture 16 - handle db error" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture 16 - handle db error" />
+    <MESSAGE value="lecture 17 - hash password" />
+    <option name="LAST_COMMIT_MESSAGE" value="lecture 17 - hash password" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
