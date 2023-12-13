@@ -5,6 +5,7 @@ import (
 	"errors"
 	"github.com/gin-gonic/gin"
 	"github.com/lib/pq"
+	_ "github.com/lib/pq"
 	db "github.com/spacex81/simplebank/db/sqlc"
 	"github.com/spacex81/simplebank/util"
 	"net/http"
@@ -43,7 +44,7 @@ func (server *Server) createUser(ctx *gin.Context) {
 		return
 	}
 
-	hashedPassword, err := util.Hashpassword(req.Password)
+	hashedPassword, err := util.HashPassword(req.Password)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, errorResponse(err))
 		return
