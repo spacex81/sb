@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="lecture 22 - authentication and authorization" />
+    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="fix minor bug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,7 +181,8 @@
     <MESSAGE value="lecture 20 - jwt and paseto" />
     <MESSAGE value="lecture 21 - add authentication" />
     <MESSAGE value="lecture 22 - authentication and authorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture 22 - authentication and authorization" />
+    <MESSAGE value="fix minor bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix minor bug" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
