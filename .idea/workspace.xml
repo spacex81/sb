@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="lecture 17 - hash password">
-      <change afterPath="$PROJECT_DIR$/token/jwt_maker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token/jwt_maker_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token/maker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token/paseto_maker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token/paseto_maker_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token/payload.go" afterDir="false" />
+    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="lecture 20 - jwt and paseto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/account_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/account_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.env" beforeDir="false" afterPath="$PROJECT_DIR$/app.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/config.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <recent name="$PROJECT_DIR$/db/sqlc" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestExpiredPasetoToken in github.com/spacex81/simplebank/token">
+  <component name="RunManager" selected="Go Test.go test github.com/spacex81/simplebank/api">
     <configuration name="TestExpiredJWTToken in github.com/spacex81/simplebank/token" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="practice" />
       <working_directory value="$PROJECT_DIR$/token" />
@@ -120,18 +119,6 @@
       <pattern value="^\QTestInvalidJWTTokenAlgNone\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestJWTMaker in github.com/spacex81/simplebank/token" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="practice" />
-      <working_directory value="$PROJECT_DIR$/token" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="github.com/spacex81/simplebank/token" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestJWTMaker\E$" />
-      <method v="2" />
-    </configuration>
     <configuration name="TestPasetoMaker in github.com/spacex81/simplebank/token" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="practice" />
       <working_directory value="$PROJECT_DIR$/token" />
@@ -144,13 +131,24 @@
       <pattern value="^\QTestPasetoMaker\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="go test github.com/spacex81/simplebank/api" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="practice" />
+      <working_directory value="$PROJECT_DIR$/api" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/spacex81/simplebank/api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test github.com/spacex81/simplebank/api" />
         <item itemvalue="Go Test.TestExpiredPasetoToken in github.com/spacex81/simplebank/token" />
         <item itemvalue="Go Test.TestPasetoMaker in github.com/spacex81/simplebank/token" />
         <item itemvalue="Go Test.TestInvalidJWTTokenAlgNone in github.com/spacex81/simplebank/token" />
         <item itemvalue="Go Test.TestExpiredJWTToken in github.com/spacex81/simplebank/token" />
-        <item itemvalue="Go Test.TestJWTMaker in github.com/spacex81/simplebank/token" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +187,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lecture 16 - handle db error" />
     <MESSAGE value="lecture 17 - hash password" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture 17 - hash password" />
+    <MESSAGE value="lecture 20 - jwt and paseto" />
+    <option name="LAST_COMMIT_MESSAGE" value="lecture 20 - jwt and paseto" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
