@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="lecture 25 - write docker-compose">
+    <list default="true" id="30d997a2-7ff7-4782-a2ae-3bb564365132" name="Changes" comment="lecture 22 - authentication and authorization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
     </list>
@@ -22,30 +22,16 @@
   </component>
   <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;spacex81&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="1a5a7ac3-0e74-4997-bc3b-85c99b830da2" />
-        <option name="url" value="https://github.com/spacex81/sb.git" />
-      </UrlAndAccount>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
     <option name="useGoPathFromSystemEnvironment" value="false" />
-  </component>
-  <component name="JsbtTreeLayoutManager">
-    <layout place="tools.popupGrunt">
-      <scroll-view-position x="0" y="0" />
-    </layout>
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -76,7 +62,7 @@
     "last_opened_file_path": "/Users/sinsinhyeonseon/WebServer/GoServer/practice/api",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -93,9 +79,6 @@
       <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/db/query" />
       <recent name="$PROJECT_DIR$/db/sqlc" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Go Test.TestGetAccountAPI in github.com/spacex81/simplebank/api">
@@ -160,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.go test github.com/spacex81/simplebank/api" />
-        <item itemvalue="Go Test.TestListAccounts in github.com/spacex81/simplebank/db/sqlc" />
         <item itemvalue="Go Test.TestGetAccountAPI in github.com/spacex81/simplebank/api" />
-        <item itemvalue="Go Test.TestExpiredPasetoToken in github.com/spacex81/simplebank/token" />
+        <item itemvalue="Go Test.TestListAccounts in github.com/spacex81/simplebank/db/sqlc" />
+        <item itemvalue="Go Test.go test github.com/spacex81/simplebank/api" />
         <item itemvalue="Go Test.TestAuthMiddleware in github.com/spacex81/simplebank/api" />
+        <item itemvalue="Go Test.TestExpiredPasetoToken in github.com/spacex81/simplebank/token" />
       </list>
     </recent_temporary>
   </component>
@@ -206,9 +189,7 @@
     <MESSAGE value="lecture 20 - jwt and paseto" />
     <MESSAGE value="lecture 21 - add authentication" />
     <MESSAGE value="lecture 22 - authentication and authorization" />
-    <MESSAGE value="fix minor bug" />
-    <MESSAGE value="lecture 25 - write docker-compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture 25 - write docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="lecture 22 - authentication and authorization" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
